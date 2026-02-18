@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Arjun Keeleri - Data Analyst skilled in Tableau, Power BI, SQL, and Python. Open to UAE and international opportunities.">
+<meta name="keywords" content="Data Analyst UAE, Tableau Developer, Power BI Portfolio, SQL Analyst, Arjun Keeleri">
+<meta name="author" content="Arjun Keeleri">
+<meta property="og:title" content="Arjun Keeleri | Data Analyst Portfolio">
+<meta property="og:description" content="Elite Data Analytics Portfolio showcasing dashboards, BI projects, and international job readiness.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/incon.jpg">
+<link rel="icon" href="images/incon.jpg">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arjun Keeleri | Data Analyst Portfolio</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:#0e141b;color:#eaf2f7}
+
+/* NAVBAR */
+.navbar{
+position:fixed;width:100%;top:0;
+backdrop-filter:blur(12px);
+background:rgba(10,18,26,0.7);
+padding:18px 40px;
+display:flex;justify-content:space-between;align-items:center;
+z-index:1000;transition:.3s}
+.navbar.shrink{padding:10px 40px;background:rgba(10,18,26,.95);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.logo{font-weight:600;font-size:1.1rem}
+.nav-links a{margin-left:22px;text-decoration:none;color:#d9f6ff;font-size:.9rem;position:relative}
+.nav-links a::after{content:"";position:absolute;bottom:-6px;left:0;height:2px;width:0;background:#00e0ff;transition:.25s}
+.nav-links a:hover{color:#00e0ff}
+.nav-links a:hover::after{width:100%}
+
+/* HERO */
+.hero{
+min-height:100vh;
+background:radial-gradient(circle at 20% 20%,#1a2c3d,#05080c 70%);
+display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px}
+.profile{width:170px;height:170px;border-radius:50%;border:4px solid #00e0ff;object-fit:cover;margin-bottom:20px;box-shadow:0 0 25px rgba(0,224,255,.6)}
+.hero h1{font-size:2.7rem;margin-bottom:10px}
+.typing{border-right:2px solid #00e0ff;padding-right:5px}
+.cta{margin-top:25px}
+.btn{padding:12px 22px;border-radius:30px;margin:6px;text-decoration:none;font-size:.85rem}
+.primary{background:#00e0ff;color:#001018}
+.secondary{border:1px solid #00e0ff;color:#00e0ff}
+.primary:hover{background:#00bcd4}
+.secondary:hover{background:#00e0ff;color:#001018}
+
+/* SECTIONS */
+.section{max-width:1100px;margin:auto;padding:80px 20px}
+.section h2{text-align:center;margin-bottom:40px;font-size:1.8rem}
+
+/* ABOUT */
+.about p{text-align:center;line-height:1.8;color:#b8c7d3}
+
+/* SKILLS */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px}
+.skill{background:#121c26;padding:18px;border-radius:10px;text-align:center;border:1px solid #1f2d3a;transition:.3s}
+.skill:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(0,224,255,.15)}
+
+/* PROJECTS */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#121c26;border:1px solid #1e2a36;padding:22px;border-radius:14px;transition:.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.card h3{margin-bottom:10px}
+.card p{font-size:.85rem;color:#a9bac6}
+
+/* CONTACT */
+.contact{text-align:center}
+.contact a{color:#00e0ff;text-decoration:none}
+
+/* FOOTER */
+.footer{text-align:center;padding:25px;background:#05080c;font-size:.8rem;color:#6f8897}
+
+/* ANIMATIONS */
+.fade{opacity:0;transform:translateY(40px);transition:all .7s ease}
+.fade.show{opacity:1;transform:translateY(0)}
+</style>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<div class="logo">Arjun Keeleri</div>
+<div class="nav-links">
+<a href="dashboards.html">Dashboards</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<img src="images/arjun.png" class="profile" alt="Arjun">
+<h1>Arjun Keeleri</h1>
+<div class="typing" id="typing"></div>
+<div class="cta">
+<div style="margin-top:15px">
+<a href="https://linkedin.com/in/arjunkeeleri" target="_blank" style="margin:0 10px;color:#00e0ff;font-size:1.2rem"><i class="fab fa-linkedin"></i></a>
+<a href="https://instagram.com/keeleri._" target="_blank" style="margin:0 10px;color:#00e0ff;font-size:1.2rem"><i class="fab fa-instagram"></i></a>
+</div>
+<p style="margin-bottom:12px;font-size:.9rem;color:#9fdfff">Available for UAE/INDIA • Remote • Data Analyst Roles</p>
+<a href="resume.pdf" class="btn primary">Download Resume</a>
+<a href="#contact" class="btn secondary">Hire Me</a>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade about">
+<h2>About Me</h2>
+<p>
+Data Analyst based in Bangalore with strong skills in Tableau, Power BI, SQL, and Python.
+Focused on building business-ready dashboards and turning raw data into insights that drive real decisions.
+Actively seeking international opportunities including UAE analytics roles.
+</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section fade">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill">Tableau</div>
+<div class="skill">Power BI</div>
+<div class="skill">SQL</div>
+<div class="skill">Python</div>
+<div class="skill">Excel</div>
+<div class="skill">Dashboard Design</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section fade">
+<p style="text-align:center;margin-top:-20px;margin-bottom:30px;color:#8fb9c9;font-size:.85rem">Real-world business dashboards focused on decision-making and ROI</p>
+<h2>Projects</h2>
+<div class="projects">
+<div class="card"><h3>Sales Intelligence Dashboard</h3><p>Advanced Tableau dashboard uncovering regional trends and revenue drivers.</p></div>
+<div class="card"><h3>HR Attrition Analytics</h3><p>Power BI model predicting employee churn using KPI segmentation.</p></div>
+<div class="card"><h3>SQL Business Analysis</h3><p>Complex joins and aggregations generating actionable business insights.</p></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade contact">
+<p style="margin-bottom:15px;color:#9fdfff">Actively applying for UAE Data Analyst roles • Immediate joiner</p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:arjunkeeleri@gmail.com">arjunkeeleri@gmail.com</a></p>
+<p>Phone: +91 9995800883</p>
+<p>Open to Work</p>
+</section>
+
+<div class="footer">© 2026 Arjun Keeleri • Elite Portfolio</div>
+
+<script>
+// Shrink navbar
+window.addEventListener('scroll',()=>{
+const n=document.querySelector('.navbar');
+window.scrollY>60?n.classList.add('shrink'):n.classList.remove('shrink')})
+
+// Typing animation
+const roles=["Data Analyst","Tableau Specialist","Power BI Developer","SQL & Dashboard Expert"]
+let i=0,j=0,el=document.getElementById('typing')
+function type(){
+if(j<roles[i].length){el.textContent+=roles[i][j++];setTimeout(type,60)}
+else setTimeout(erase,1200)}
+function erase(){
+if(j>0){el.textContent=roles[i].slice(0,--j);setTimeout(erase,35)}
+else{i=(i+1)%roles.length;setTimeout(type,300)}}
+type()
+
+// Scroll reveal
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.2})
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el))
+</script>
+
+</body>
+</html>
